@@ -1,0 +1,30 @@
+{
+  "name": "tailwind-preset-carbon",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:carbon-design-system/tailwind-preset-carbon.git",
+  "license": "Apache-2.0",
+  "files": [
+    "src",
+    "index.js",
+    "g10.js",
+    "g90.js",
+    "g100.js"
+  ],
+  "workspaces": [
+    "examples/*"
+  ],
+  "scripts": {
+    "format": "prettier --write '**/*.{js,md,scss,ts}'",
+    "format:diff": "prettier --list-different '**/*.{js,md,scss,ts}'"
+  },
+  "dependencies": {
+    "@carbon/colors": "^10.25.0",
+    "@carbon/themes": "^10.34.0",
+    "lodash.clonedeep": "^4.5.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.0",
+    "prettier-config-carbon": "^0.4.0"
+  }
+}
