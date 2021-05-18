@@ -7,8 +7,11 @@
 
 'use strict';
 
-const { addThemeToConfig } = require('./src/themes');
+const { apply } = require('./src/apply');
+const breakpoints = require('./src/breakpoints');
+const colors = require('./src/colors');
+const spacing = require('./src/spacing');
+const themes = require('./src/themes');
+const type = require('./src/type');
 
-console.log(addThemeToConfig('white'));
-
-module.exports = addThemeToConfig('white');
+module.exports = apply([breakpoints, colors, spacing, themes.white, type]);

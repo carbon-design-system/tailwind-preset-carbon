@@ -11,7 +11,7 @@ export default function Home() {
       <button type="button" className="bg-blue-50">
         Hello there
       </button>
-      <p className="text-01">
+      <p className="text-text-01">
         Lorem cumque voluptate a in facilis Laborum ducimus illo rem consectetur
         voluptatem perspiciatis, quas. Sit dolore assumenda repellat architecto
         odio quia? Voluptatibus mollitia dolorem quisquam obcaecati saepe quam?

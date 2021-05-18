@@ -16,14 +16,19 @@
   ],
   "scripts": {
     "format": "prettier --write '**/*.{js,md,scss,ts}'",
-    "format:diff": "prettier --list-different '**/*.{js,md,scss,ts}'"
+    "format:diff": "prettier --list-different '**/*.{js,md,scss,ts}'",
+    "test": "jest"
   },
   "dependencies": {
     "@carbon/colors": "^10.25.0",
+    "@carbon/layout": "^10.24.0",
     "@carbon/themes": "^10.34.0",
-    "lodash.clonedeep": "^4.5.0"
+    "@carbon/type": "^10.28.0",
+    "lodash.merge": "^4.6.2"
   },
   "devDependencies": {
+    "jest": "^26.6.3",
+    "jest-circus": "^26.6.3",
     "prettier": "^2.3.0",
     "prettier-config-carbon": "^0.4.0"
   }
