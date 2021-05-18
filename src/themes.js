@@ -8,20 +8,29 @@
 'use strict';
 
 const { themes, unstable__meta } = require('@carbon/themes');
-const clone = require('lodash.clonedeep');
-const base = require('./base');
+const merge = require('lodash.merge');
 const { formatToken } = require('./tokens');
 
-function addThemeToConfig(name) {
-  const config = clone(base);
+const extensions = {};
 
-  for (const [key, value] of Object.entries(themes[name])) {
-    if (isColorToken(key)) {
-      config.theme.colors[formatToken(key)] = value;
-    }
-  }
+for (const [key, theme] of Object.entries(themes)) {
+  extensions[key] = {
+    extend(config) {
+      const colors = {};
 
-  return config;
+      for (const [key, value] of Object.entries(theme)) {
+        if (isColorToken(key)) {
+          colors[formatToken(key)] = value;
+        }
+      }
+
+      return merge(config, {
+        theme: {
+          colors,
+        },
+      });
+    },
+  };
 }
 
 function isColorToken(key) {
@@ -32,6 +41,4 @@ function isColorToken(key) {
   });
 }
 
-module.exports = {
-  addThemeToConfig,
-};
+module.exports = extensions;
