@@ -8,10 +8,18 @@
 'use strict';
 
 const { apply } = require('./src/apply');
+const aspectRatio = require('./src/aspect-ratio');
 const breakpoints = require('./src/breakpoints');
 const colors = require('./src/colors');
 const spacing = require('./src/spacing');
 const themes = require('./src/themes');
 const type = require('./src/type');
 
-module.exports = apply([breakpoints, colors, spacing, themes.white, type]);
+module.exports = apply([
+  aspectRatio,
+  breakpoints,
+  colors,
+  spacing,
+  themes.white,
+  type,
+]);
