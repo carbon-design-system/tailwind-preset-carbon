@@ -5859,7 +5859,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.1.6, postcss@npm:^8.2.1, postcss@npm:^8.2.15, postcss@npm:latest":
+"postcss@npm:^8.1.6, postcss@npm:^8.2.1, postcss@npm:latest":
   version: 8.2.15
   resolution: "postcss@npm:8.2.15"
   dependencies:
@@ -7164,14 +7164,12 @@ __metadata:
     jest: ^26.6.3
     jest-circus: ^26.6.3
     lodash.merge: ^4.6.2
-    postcss: ^8.2.15
     prettier: ^2.3.0
     prettier-config-carbon: ^0.4.0
-    tailwindcss: ^2.1.2
   languageName: unknown
   linkType: soft
 
-"tailwindcss@npm:^2.1.2, tailwindcss@npm:latest":
+"tailwindcss@npm:latest":
   version: 2.1.2
   resolution: "tailwindcss@npm:2.1.2"
   dependencies:
