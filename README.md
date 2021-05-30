@@ -38,6 +38,17 @@ module.exports = {
 };
 ```
 
+This preset includes the following custom configuration with Tailwind:
+
+- Colors from the IBM Design Language
+- Tokens from the Carbon Design System
+  - Colors
+  - Spacing
+- Helpers
+  - Aspect Ratio
+  - Breakpoints
+  - Font families
+
 ## 📚 Examples
 
 If you're looking for more examples on how to use `tailwind-preset-carbon`, we
