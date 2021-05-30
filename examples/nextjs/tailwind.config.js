@@ -8,6 +8,6 @@
 'use strict';
 
 module.exports = {
-  presets: [require.resolve('../../')],
+  presets: [require('../../')],
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
 };
