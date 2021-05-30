@@ -2,6 +2,7 @@
   "name": "example-nextjs",
   "private": true,
   "scripts": {
+    "build": "next build",
     "clean": "rimraf .next",
     "develop": "next",
     "start": "next"
