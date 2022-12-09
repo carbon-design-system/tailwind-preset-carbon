@@ -426,6 +426,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@carbon/colors@npm:^11.10.0":
+  version: 11.10.0
+  resolution: "@carbon/colors@npm:11.10.0"
+  checksum: ad2aef3300cfd8dcce7a23927913b60f588b830a23a961b398cb1f871ca6c8eb7e4b707fff72f799a6780985ce35bc0a7daaaead79196ece4ef2e8ce2ddcf6ce
+  languageName: node
+  linkType: hard
+
+"@carbon/grid@npm:^11.9.0":
+  version: 11.9.0
+  resolution: "@carbon/grid@npm:11.9.0"
+  dependencies:
+    "@carbon/layout": ^11.9.0
+  checksum: e03d0908e7940b54e14f6092e61e3a8c719583a5888f3a73d1801faaac53d97d191b56c3d5d0958900a9c0b8ea8e8e828b158fa2ca0e81413430a30223572ee1
+  languageName: node
+  linkType: hard
+
 "@carbon/import-once@npm:^10.6.0":
   version: 10.6.0
   resolution: "@carbon/import-once@npm:10.6.0"
@@ -440,15 +456,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@carbon/themes@npm:^10.34.0":
-  version: 10.34.0
-  resolution: "@carbon/themes@npm:10.34.0"
+"@carbon/layout@npm:^11.9.0":
+  version: 11.9.0
+  resolution: "@carbon/layout@npm:11.9.0"
+  checksum: f7d62e6432212f8e5a9d93265cff4c16cff5c8cb8e59628fe3a25c8d6bb39cd04fba0cb3ede9fe36f792d37df9c01233690d72abbc59f83d04dbab3606009b75
+  languageName: node
+  linkType: hard
+
+"@carbon/themes@npm:^11.14.0":
+  version: 11.14.0
+  resolution: "@carbon/themes@npm:11.14.0"
   dependencies:
-    "@carbon/colors": ^10.25.0
-    "@carbon/layout": ^10.24.0
-    "@carbon/type": ^10.28.0
-    color: ^3.1.2
-  checksum: 72e008e07f9a114142f564d4c1802b2cc136d6e9bb2f8311cfc69555de4d2885769361a2188106dac6c16e7d52522a9c486f99a82a24f2d6c492742ec5de8abe
+    "@carbon/colors": ^11.10.0
+    "@carbon/layout": ^11.9.0
+    "@carbon/type": ^11.13.0
+    color: ^4.0.0
+  checksum: cbfc9726b3a43b8c8a109374b9eb65796ad84bb412ae45b26f25ea32a0f9a13f6961f496603dcce809bf78892befff72b98a7fff8d8a509c988284768c700d9d
   languageName: node
   linkType: hard
 
@@ -459,6 +482,16 @@ __metadata:
     "@carbon/import-once": ^10.6.0
     "@carbon/layout": ^10.24.0
   checksum: 3ce5521097bed67685b4ca1b2a95373ad5c17a46dc8d5df3a4ecedb821947a25321c07abb838537ef486750dcbdb45e244f010fb8aaf7757f6f70be654c2d5f6
+  languageName: node
+  linkType: hard
+
+"@carbon/type@npm:^11.13.0":
+  version: 11.13.0
+  resolution: "@carbon/type@npm:11.13.0"
+  dependencies:
+    "@carbon/grid": ^11.9.0
+    "@carbon/layout": ^11.9.0
+  checksum: 8867fc85d16c73f60e1c058ef7b4f0fc0ff1118f438a592c93b32c29efa7d60210fdeba7cacc42a28ebc90f8527706c93bc1dfb9c3e2afd74e21c99138b2477d
   languageName: node
   linkType: hard
 
@@ -1984,13 +2017,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"color@npm:^3.1.2, color@npm:^3.1.3":
+"color-string@npm:^1.9.0":
+  version: 1.9.1
+  resolution: "color-string@npm:1.9.1"
+  dependencies:
+    color-name: ^1.0.0
+    simple-swizzle: ^0.2.2
+  checksum: 3d2141907ff0b7bda3d38f433592bebd26e44ec8c4c0506fff712cf4068b270551f9381342c67bcf5a38d46aeb18b8389d9c84806da8fb78dc5c07991ed16163
+  languageName: node
+  linkType: hard
+
+"color@npm:^3.1.3":
   version: 3.1.3
   resolution: "color@npm:3.1.3"
   dependencies:
     color-convert: ^1.9.1
     color-string: ^1.5.4
   checksum: d0f4139e986806aaacaa748d170c9778faed93695fb776cd27d9c5825424263eb9354f69033804d0d2d350d9831a31d14dddff045da00713499f279da97e602f
+  languageName: node
+  linkType: hard
+
+"color@npm:^4.0.0":
+  version: 4.2.3
+  resolution: "color@npm:4.2.3"
+  dependencies:
+    color-convert: ^2.0.1
+    color-string: ^1.9.0
+  checksum: c75b8afebdf2444696d358c301dda59f213f79164744bd5a8fe47092785fe6cfff4511aade49a62607a541d02c2e4c1df153d9c03a41ef1bf60222e99b8676a8
   languageName: node
   linkType: hard
 
@@ -2701,7 +2754,7 @@ __metadata:
   dependencies:
     "@carbon/colors": ^10.25.0
     "@carbon/layout": ^10.24.0
-    "@carbon/themes": ^10.34.0
+    "@carbon/themes": ^11.14.0
     "@carbon/type": ^10.28.0
     autoprefixer: latest
     next: ^10.2.3
@@ -7148,7 +7201,7 @@ __metadata:
   dependencies:
     "@carbon/colors": ^10.25.0
     "@carbon/layout": ^10.24.0
-    "@carbon/themes": ^10.34.0
+    "@carbon/themes": ^11.14.0
     "@carbon/type": ^10.28.0
     jest: ^26.6.3
     jest-circus: ^26.6.3

@@ -22,7 +22,7 @@
   "dependencies": {
     "@carbon/colors": "^10.25.0",
     "@carbon/layout": "^10.24.0",
-    "@carbon/themes": "^10.34.0",
+    "@carbon/themes": "^11.14.0",
     "@carbon/type": "^10.28.0",
     "lodash.merge": "^4.6.2"
   },
