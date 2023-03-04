@@ -10,7 +10,7 @@
   "dependencies": {
     "@carbon/colors": "^10.25.0",
     "@carbon/layout": "^10.24.0",
-    "@carbon/themes": "^10.34.0",
+    "@carbon/themes": "^11.17.0",
     "@carbon/type": "^10.28.0",
     "autoprefixer": "latest",
     "next": "^10.2.3",
